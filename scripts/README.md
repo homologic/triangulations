@@ -8,6 +8,7 @@ minimal ones, remove duplicates, and then export them, sorted by PL-type.
 
 - Polymake
 - PostgreSQL
+- GNU Parallel
 
 ### How to use:
 
