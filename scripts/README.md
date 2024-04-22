@@ -29,7 +29,7 @@ Populate the minimal triangulations (by vertices) table by finding the
 minimum triangulation for each signature
 
 ```
-INSERT INTO minimal_triangulations SELECT DISTINCT ON (signature) * FROM triangulations ORDER BY signature, vertices 
+INSERT INTO minimal_triangulations SELECT DISTINCT ON (signature) * FROM triangulations ORDER BY signature, vertices;
 ```
 
 Remove combinatorially isomorphic triangulations by running `triangulation_bookkeeping_minimal.pl`, and output sorted by type using `triangulation_bookkeeping_output.pl`
