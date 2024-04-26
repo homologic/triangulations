@@ -33,3 +33,18 @@ INSERT INTO minimal_triangulations SELECT DISTINCT ON (signature) * FROM triangu
 ```
 
 Remove combinatorially isomorphic triangulations by running `triangulation_bookkeeping_minimal.pl`, and output sorted by type using `triangulation_bookkeeping_output.pl`
+
+
+### Spheres
+
+Additionally, sort spheres for which a spherical discrete morse vector was found with
+
+```
+for k in $(psql -d researchdata_test -c "SELECT signature FROM complexes WHERE remark = 'discrete_morse';" | grep '^ g' | sed 's/ //g' ) ; 
+do 
+	p=$(find . -name *$k*); 
+	npt=../S^4-discretemorse/$p; 
+	mkdir -p $(dirname $npt); 
+	mv $p $npt; 
+done
+```

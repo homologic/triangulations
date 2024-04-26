@@ -38,6 +38,18 @@ These 1464 triangulations have all been shown to be PL-Homeomorphic to
 each other using retriangulate, however, polymake has big difficulties
 in finding the PL-homeomorphisms between them. 
 
+### S⁴
+
+These 1016 triangulations are triangulations of S⁴ shown to be
+PL-homeomorphic to S⁴ using the retriangulate tool, for which no other
+methods (bistellar simplification, discrete morse theory) worked.
+
+### S⁴-discretemorse
+
+These 48 triangulations have been shown to be PL-homeomorphic to S⁴ by
+finding a spherical discrete morse vector.
+
+
 
 
 
